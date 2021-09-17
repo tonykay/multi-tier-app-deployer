@@ -50,7 +50,7 @@
 
     - name: Setup Postgres database(s) 
       postgresql_db:
-        name: "{{ __database.name }}"
+        name: "{{ _database.name }}"
         state: "{{ __database.state | default('present') }}"
       loop: "{{ postgres_databases }}"
       loop_control:

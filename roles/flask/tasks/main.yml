@@ -46,7 +46,7 @@
       pip:
         name: "{{ pip_dependencies }}"
         state: latest
-        executable: /usr/bin/pip3.8
+        executable: /usr/bin/pip4.8
 
     - name: "Create virtualenv {{ virtualenv_name }} for Flask"
       pip:
